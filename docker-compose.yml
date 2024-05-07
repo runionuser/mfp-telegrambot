@@ -1,10 +1,12 @@
 version: '3.1'
 
 services:
-  mfptelegrambot:
+  mfptgbot:
     build:
       context: .
     environment:
-      - BOT_NAME=${BOT_NAME}
-      - BOT_TOKEN=${BOT_TOKEN}
+      BOT_NAME: mfptgbot
+      BOT_TOKEN: 6603544152:AAGSx1Qh3LFItBSaLBcBal8Yg_mlW8vZ-_w
+    ports:
+      - "8080:8080"
     restart: always

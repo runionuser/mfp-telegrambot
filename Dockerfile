@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:ubi
+FROM meddream/jdk17:latest
 ARG JAR_FILE=target/*.jar
 ENV BOT_NAME=mfptgbot
 ENV BOT_TOKEN=6603544152:AAGSx1Qh3LFItBSaLBcBal8Yg_mlW8vZ-_w
