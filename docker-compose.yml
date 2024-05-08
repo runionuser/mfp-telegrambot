@@ -10,3 +10,13 @@ services:
     ports:
       - "8080:8080"
     restart: always
+  mfp-db:
+    image: mysql:5.7
+    restart: always
+    container_name: dev-mfp-db
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: "dev-mfp-db"
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
